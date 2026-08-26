@@ -1,0 +1,292 @@
+{
+  "main": {
+    "id": "21943e9c727d9e75",
+    "type": "split",
+    "children": [
+      {
+        "id": "90cc5346560b7df9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a8f4cb28e60964e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Areas/Linux/Utilities/Encrypted disks.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Encrypted disks"
+            }
+          },
+          {
+            "id": "e4eaeb4d6f0c3bf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Areas/Políticas de Uso/Política de cocina y alimentación.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Política de cocina y alimentación"
+            }
+          },
+          {
+            "id": "953346809b6608f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Areas/Políticas de Uso/Política de higiene y cuidado.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Política de higiene y cuidado"
+            }
+          },
+          {
+            "id": "c7ea0c28923c681b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03-Areas/Políticas de Uso/Políticas.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Políticas"
+            }
+          },
+          {
+            "id": "f53a4713b2bbb7ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05-Archive/1st year/FP/TEMA 2/CONTROL DE FLUJO.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CONTROL DE FLUJO"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1af1357aa9d12506",
+    "type": "split",
+    "children": [
+      {
+        "id": "3992206172f0bb89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "571e3f6090771873",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "076ced9df0eb66a2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "78f5ee6c67c4e7f8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "09e6e5d532d0429d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d249639a6108719",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "028faef7fe2db748",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03-Areas/Linux/Utilities/Disk partitioning and mounting.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Disk partitioning and mounting"
+            }
+          },
+          {
+            "id": "dbc5b78d2ff11767",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "feffe.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from feffe"
+            }
+          },
+          {
+            "id": "db9895531449cf45",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "48ce2e2291f76685",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "83c85ba420cca8be",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "feffe.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of feffe"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f53a4713b2bbb7ba",
+  "lastOpenFiles": [
+    "05-Archive/1st year/FP/TEMA 1/CONCEPTOS BÁSICOS.md",
+    "05-Archive/1st year/FP/TEMA 1/MÉTODOS AUXILIARES.md",
+    "05-Archive/1st year/FP/TEMA 1/OPERADORES.md",
+    "05-Archive/1st year/FP/TEMA 2/CONTROL DE FLUJO.md",
+    "05-Archive/1st year/FP/TEMA 2",
+    "05-Archive/1st year/FP/TEMA 1",
+    "05-Archive/1st year/FP/TEMA 1/TIPOS DE DATOS.md",
+    "05-Archive/1st year/FP/FP.md",
+    "05-Archive/1st year/AM/AM.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Madrid.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Palma.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Cádiz.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Granada.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Barcelona.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Málaga.md",
+    "03-Areas/Knowledge/Metro and commuter Systems/Sevilla.md",
+    "03-Areas/Knowledge/Knowledge.md",
+    "03-Areas/Knowledge/Metro and commuter Systems",
+    "03-Areas/Investigation.md",
+    "03-Areas/Políticas de Uso/Política financiera.md",
+    "03-Areas/Knowledge",
+    "03-Areas/Políticas de Uso/Política de control digital.md",
+    "03-Areas/Políticas de Uso/Política de conocimiento.md",
+    "03-Areas/Políticas de Uso/Política de aficiones.md",
+    "03-Areas/Políticas de Uso/Política de cocina y alimentación.md",
+    "03-Areas/Políticas de Uso/Política de planning.md",
+    "03-Areas/Políticas de Uso/Política de higiene y cuidado.md",
+    "03-Areas/Políticas de Uso/Política de deporte.md",
+    "03-Areas/Políticas de Uso/Políticas.md",
+    "05-Archive/4th year/EPAC",
+    "05-Archive/4th year/GPR",
+    "05-Archive/4th year/ADS",
+    "05-Archive/4th year/MOB",
+    "05-Archive/4th year/VV",
+    "05-Archive/4th year/TLP",
+    "03-Areas/5th year/University.md",
+    "99-Attachments/Images/Pasted image 20260621134147.png",
+    "99-Attachments/Images/Pasted image 20260621131318.png",
+    "99-Attachments/Images/Pasted image 20260621130419.png"
+  ]
+}

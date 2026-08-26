@@ -1,0 +1,39 @@
+
+.titlebar {
+  display: none !important; /* Replace with your preferred dark hex code */
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.lucide-chevrons-down-up {
+	display: none !important;
+}
+
+.lucide-gallery-vertical {
+	display: none !important;
+}
+
+.workspace-tab-header-tab-list {
+	display: none !important;
+}
+.workspace-tab-header-new-tab {
+	display: none !important;
+}
+
+.workspace-tab-header-container::after {
+	display: none !important;
+}
+
+.workspace-tab-header-spacer {
+	display: none !important;
+}
+
+.sidebar-toggle-button {
+	display: none !important;
+}
+
+.status-bar {
+	display: none !important;
+}
+

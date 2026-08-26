@@ -1,0 +1,8 @@
+# [[Política de deporte]]
+# [[Política de cocina y alimentación]]
+# [[Política de planning]]
+# [[Política de aficiones]]
+# [[Política de control digital]]
+# [[Política de conocimiento]]
+# [[Política financiera]]
+# [[Política de higiene y cuidado]]
