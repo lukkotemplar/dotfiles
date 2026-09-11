@@ -1,3 +1,0 @@
-# [[Investigation]]
-# [[University]]
-# [[Políticas]]

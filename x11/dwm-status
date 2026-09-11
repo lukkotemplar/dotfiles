@@ -2,15 +2,7 @@
 battery() {
     BAT="$(ls -d /sys/class/power_supply/BAT* 2>/dev/null | head -n 1)"
     CAP="$(cat "$BAT/capacity")"
-    STATUS="$(cat "$BAT/status")"
-
-    case "$STATUS" in
-        Charging)    ICON=" (Charging)" ;;
-        Discharging) ICON=" (Discharging)" ;;
-        *) ICON="" ;;
-    esac
-
-    printf "%s%%%s" "$CAP" "$ICON"
+    printf "%s%%" "$CAP"
 }
 internet() {
     IFACE="$(ip route show default 2>/dev/null | awk 'NR==1 {
@@ -19,19 +11,12 @@ internet() {
     STATE="$(cat /sys/class/net/$IFACE/operstate 2>/dev/null)"
 
     if [ "$STATE" = "up" ]; then
-        printf "Connected to internet"
+        printf "UP"
     else
-        printf "No internet connection"
+        printf "DWN"
     fi
 }
-#vol() {
-#    if pamixer --get-mute | grep -q true; then
-#        printf "Mute"
-#    else
-#        printf "%s%%" "$(pamixer --get-volume)"
-#    fi
-#}
 while true; do
-    xsetroot -name "ALT+SHIFT+ENTER to open menu   Battery: $(battery)   $(internet)   Date: $(date '+%d/%m/%Y %H:%M')"
+    xsetroot -name "$(battery)   $(internet)   $(date '+%H:%M')"
     sleep 5
 done

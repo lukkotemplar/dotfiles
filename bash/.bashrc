@@ -36,9 +36,9 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 alias ls='ls -F'
 if pgrep -x dwm >/dev/null 2>&1; then
-    PS1='\[\e[37m\]\[\e[1m\]You are in: $(print_prompt)\n> \[\e[0m\]\[\e[1m\]' # Prompt for dwm
+    PS1='\[\e[37m\]\[\e[1m\]$(print_prompt)>\[\e[0m\]\[\e[1m\]' # Prompt for dwm
 else
-    PS1='You are in: $(print_prompt)\n> ' # Prompt for tty
+    PS1='$(print_prompt)>' # Prompt for tty
 fi
 export PATH="$HOME/.local/bin:$PATH" # PATH
 export BROWSER='librewolf' # Change it to your preferred browser

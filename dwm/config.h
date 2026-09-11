@@ -4,35 +4,36 @@
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int showbar            = 0;        /* 0 means no bar */
+static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "IosevkaTerm Nerd Font:size=13" };
-static const char dmenufont[]       = "IosevkaTerm Nerd Font:size=13";
+static const char *fonts[]          = { "PxPlus IBM VGA8:size=17" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
+static const char col_gray5[]       = "#999999";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_blue[]	    = "#04364a";
+static const char col_black[]       = "#000000";
+static const char col_white[]       = "#ffffff";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_blue, col_blue },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { col_gray5, col_black, col_black },
+	[SchemeSel]  = { col_white, col_black,  col_black  },
 };
 
 /* tagging */
-static const char *tags[] = { "01", "02", "03" };
+static const char *tags[] = { "1", "2", "3", "4" };
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
-	 *	WM_NAME(STRING) = title
-	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "librewolf",  NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "obsidian",  NULL,       NULL,       1 << 2,       0,           -1 },
+	/*xprop(1):
+		WM_CLASS(STRING) = instance, class
+		WM_NAME(STRING) = title
+	 
+	class      instance    title       tags mask     isfloating   monitor*/
+    {
+            "gimp", "gimp", "gimp", 0, 1, -1
+    }
 };
 
 /* layout(s) */
@@ -43,9 +44,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "tiled",      tile },    /* first entry is default */
-	{ "float",      NULL },    /* no layout function means floating behavior */
-	{ "mono",      monocle },
+	{ "",      tile },    /* first entry is default */
+	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "",      monocle },
 };
 
 /* key definitions */
@@ -60,20 +61,21 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *screenshotcmd[] = { "sh", "-c", "maim -s | xclip -selection clipboard -t image/png", NULL };
 static const char *lockcmd[]  = { "lock", NULL };
-static const char *browsercmd[]  = { "browser", NULL };
-static const char *notescmd[]  = { "notes", NULL };
-static const char *volup[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%+", NULL };
-static const char *voldown[]  = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "5%-", NULL };
-static const char *volmute[]  = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+static const char *browsercmd[]  = { "librewolf", NULL };
+static const char *notescmd[]  = { "obsidian", NULL };
+static const char *volup[]  = { "pamixer", "-i", "5", NULL };
+static const char *voldown[]  = { "pamixer", "-d", "5", NULL };
+static const char *volmute[]  = { "pamixer", "-t", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             XK_b, spawn,          {.v = browsercmd } },
+	{ MODKEY,             XK_n, spawn,          {.v = notescmd } },
+	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -95,9 +97,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_q, spawn,         {.v = lockcmd } },
+	{ MODKEY,             XK_q, quit,         {0} },
 	{ MODKEY|ShiftMask,             XK_s, spawn,         {.v = screenshotcmd } },
-	{ MODKEY,             XK_b, spawn,         {.v = browsercmd } },
-	{ MODKEY,             XK_n, spawn,         {.v = notescmd } },
 	{ 0, 			XF86XK_AudioRaiseVolume, spawn, {.v = volup} },
 	{ 0, 			XF86XK_AudioLowerVolume, spawn, {.v = voldown} },
 	{ 0, 			XF86XK_AudioMute, spawn, {.v = volmute} },

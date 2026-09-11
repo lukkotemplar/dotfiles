@@ -1,0 +1,5 @@
+#!/bin/bash
+if ! pgrep -x >/dev/null 2>&1; then
+clear
+exec startx >/dev/null 2>&1
+fi
